@@ -1,4 +1,4 @@
-# OpenSeesPy
+# OpenSeesPyView
 A pre and post process GUI for the OpenSeesPy  
 ##########################################################################    
 Author: Junjun Guo([HomePage](https://github.com/Junjun1guo))    
