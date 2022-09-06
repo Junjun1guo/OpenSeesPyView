@@ -1,5 +1,5 @@
 # OpenSeesPyView
-A pre and post process GUI for the OpenSeesPy  
+A pre and post process tool for the OpenSeesPy  
 ##########################################################################    
 Author: Junjun Guo([HomePage](https://github.com/Junjun1guo))    
 E-mail: guojj@tongji.edu.cn/guojj_ce@163.com    
