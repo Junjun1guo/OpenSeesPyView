@@ -1,6 +1,6 @@
 #-*-coding: UTF-8-*-
 ######################################################################
-##   OpenSeesPyGUI- A pre and post process GUI for the OpenSeesPy   ##
+##   OpenSeesPyView- A pre and post process GUI for the OpenSeesPy  ##
 ##   (C) Copyright 2022 Department of bridge engineering,Tongji     ##
 ##   University, All rights reserved.                               ##
 ##                                                                  ##
@@ -56,8 +56,8 @@ class MainWindow(QtWidgets.QMainWindow):
 
     def ui(self):
         """---basic panel setting---"""
-        self.setWindowTitle("OpenSeesPyGUI")
-        self.setWindowIcon(QIcon(self.resourcePath+"/OpenSeesPyGUI.ico"))
+        self.setWindowTitle("OpenSeesPyView")
+        self.setWindowIcon(QIcon(self.resourcePath+"/figures/OpenSeesPyView.ico"))
         self.setGeometry(int(0.05 * self.screenSize[0]), int(0.1 * self.screenSize[1]), \
                          int(0.9 * self.screenSize[0]), int(0.8 * self.screenSize[1]))
         self.frame = QFrame()  # generate frame
@@ -276,7 +276,7 @@ class MainWindow(QtWidgets.QMainWindow):
 
     def nodeBar(self, mainToolBar):
         """---model nodes tool set---"""
-        nodeAct = QAction(QIcon(self.resourcePath+"/node.png"), "node", self)
+        nodeAct = QAction(QIcon(self.resourcePath+"/figures/node.png"), "node", self)
         mainToolBar.addAction(nodeAct)
         nodeAct.triggered.connect(self.nodeBarSlot)
 
@@ -287,7 +287,7 @@ class MainWindow(QtWidgets.QMainWindow):
 
     def nodeTagBar(self, mainToolBar):
         """---model nodes and tags set---"""
-        nodeTagAct = QAction(QIcon(self.resourcePath+"/nodeTag.png"), "nodeTag", self)
+        nodeTagAct = QAction(QIcon(self.resourcePath+"/figures/nodeTag.png"), "nodeTag", self)
         mainToolBar.addAction(nodeTagAct)
         nodeTagAct.triggered.connect(self.nodeTagBarSlot)
 
@@ -298,7 +298,7 @@ class MainWindow(QtWidgets.QMainWindow):
 
     def eleBar(self, mainToolBar):
         """---model elements set---"""
-        elesAct = QAction(QIcon(self.resourcePath+"/element.png"), "elements", self)
+        elesAct = QAction(QIcon(self.resourcePath+"/figures/element.png"), "elements", self)
         mainToolBar.addAction(elesAct)
         elesAct.triggered.connect(self.elesBarSlot)
 
@@ -309,7 +309,7 @@ class MainWindow(QtWidgets.QMainWindow):
 
     def eleNodeBar(self, mainToolBar):
         """---model elements and nodes set---"""
-        eleNodeAct = QAction(QIcon(self.resourcePath+"/eleNodes.png"), "elements and nodes", self)
+        eleNodeAct = QAction(QIcon(self.resourcePath+"/figures/eleNodes.png"), "elements and nodes", self)
         mainToolBar.addAction(eleNodeAct)
         eleNodeAct.triggered.connect(self.eleNodeBarSlot)
 
@@ -320,7 +320,7 @@ class MainWindow(QtWidgets.QMainWindow):
 
     def eleNodeTagBar(self, mainToolBar):
         """---model elments ,nodes and tags set---"""
-        eleNodeTagAct = QAction(QIcon(self.resourcePath+"/nodeEleTag.png"), "elements,nodes and tags", self)
+        eleNodeTagAct = QAction(QIcon(self.resourcePath+"/figures/nodeEleTag.png"), "elements,nodes and tags", self)
         mainToolBar.addAction(eleNodeTagAct)
         eleNodeTagAct.triggered.connect(self.eleNodeTagBarSlot)
 
@@ -331,7 +331,7 @@ class MainWindow(QtWidgets.QMainWindow):
 
     def localZBar(self,mainToolBar):
         """---local coordinate system of each element set---"""
-        localZAct = QAction(QIcon(self.resourcePath + "/eleLocalZTag.png"), "element local coordinate system", self)
+        localZAct = QAction(QIcon(self.resourcePath + "/figures/eleLocalZTag.png"), "element local coordinate system", self)
         mainToolBar.addAction(localZAct)
         localZAct.triggered.connect(self.localZBarSlot)
 
@@ -343,7 +343,7 @@ class MainWindow(QtWidgets.QMainWindow):
 
     def initBar(self, mainToolBar):
         """---reset view to default---"""
-        initAct = QAction(QIcon(self.resourcePath+"/init.png"), "default view", self)
+        initAct = QAction(QIcon(self.resourcePath+"/figures/init.png"), "default view", self)
         mainToolBar.addAction(initAct)
         initAct.triggered.connect(self.initBarSlot)
 
@@ -353,7 +353,7 @@ class MainWindow(QtWidgets.QMainWindow):
 
     def threeDimBar(self, mainToolBar):
         """---3D view set---"""
-        threeDimAct = QAction(QIcon(self.resourcePath+"/threeDim.png"), "three dimensional view", self)
+        threeDimAct = QAction(QIcon(self.resourcePath+"/figures/threeDim.png"), "three dimensional view", self)
         mainToolBar.addAction(threeDimAct)
         threeDimAct.triggered.connect(self.threeDimBarSlot)
 
@@ -363,7 +363,7 @@ class MainWindow(QtWidgets.QMainWindow):
 
     def xyViewBar(self, mainToolBar):
         """---xy view set---"""
-        xyViewAct = QAction(QIcon(self.resourcePath+"/XYView.png"), "XY view", self)
+        xyViewAct = QAction(QIcon(self.resourcePath+"/figures/XYView.png"), "XY view", self)
         mainToolBar.addAction(xyViewAct)
         xyViewAct.triggered.connect(self.xyViewBarSlot)
 
@@ -373,7 +373,7 @@ class MainWindow(QtWidgets.QMainWindow):
 
     def xzViewBar(self, mainToolBar):
         """---xz view set---"""
-        xzViewAct = QAction(QIcon(self.resourcePath+"/XZView.png"), "XZ view", self)
+        xzViewAct = QAction(QIcon(self.resourcePath+"/figures/XZView.png"), "XZ view", self)
         mainToolBar.addAction(xzViewAct)
         xzViewAct.triggered.connect(self.xzViewBarSlot)
 
@@ -383,7 +383,7 @@ class MainWindow(QtWidgets.QMainWindow):
 
     def yzViewBar(self, mainToolBar):
         """---yz view set---"""
-        yzViewAct = QAction(QIcon(self.resourcePath+"/YZView.png"), "YZ view", self)
+        yzViewAct = QAction(QIcon(self.resourcePath+"/figures/YZView.png"), "YZ view", self)
         mainToolBar.addAction(yzViewAct)
         yzViewAct.triggered.connect(self.yzViewBarSlot)
 
